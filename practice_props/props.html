@@ -17,11 +17,33 @@
     <script type="text/babel">
         const root = document.getElementById('root');
 
+        function Btn({ text, big }) {
+            console.log(text, big);
+
+            return (
+                <button
+                    style={{
+                        backgroundColor: 'tomato',
+                        color: big ? '#fff' : 'blue',
+                        padding: '10px 20px',
+                        border: 0,
+                        borderRadius: '10px',
+                    }}
+                >
+                    {text}
+                </button>
+            );
+        }
+
         function App() {
-            return <div></div>;
+            return (
+                <div>
+                    <Btn text="Save Changes" big={true} />
+                    <Btn text="Continue" />
+                </div>
+            );
         }
 
         ReactDOM.render(<App />, root);
     </script>
 </html>
-`
