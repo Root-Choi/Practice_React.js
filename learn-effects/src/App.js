@@ -1,7 +1,9 @@
+import UseEffect from './UseEffect';
+
 function App() {
     return (
         <div>
-            <h3>Welcome!</h3>
+            <UseEffect />
         </div>
     );
 }
