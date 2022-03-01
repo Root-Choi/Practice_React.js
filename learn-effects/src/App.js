@@ -1,9 +1,11 @@
 import UseEffect from './UseEffect';
+import Cleanup from './Cleanup';
 
 function App() {
     return (
         <div>
-            <UseEffect />
+            {/* <UseEffect /> */}
+            <Cleanup />
         </div>
     );
 }
