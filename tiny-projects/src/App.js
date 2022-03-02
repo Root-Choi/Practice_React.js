@@ -3,7 +3,7 @@ import ToDo from './ToDo';
 import CoinTracker from './CoinTracker';
 
 function App() {
-    const [index, setIndex] = useState(0);
+    const [index, setIndex] = useState('2');
     const showWhat = (e) => {
         setIndex(e.target.value);
     };
