@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ToDo from './ToDo';
+import CoinTracker from './CoinTracker';
 
 function App() {
     const [index, setIndex] = useState(0);
@@ -17,7 +18,7 @@ function App() {
             <hr />
             {index === '0' ? 'Please Select' : null}
             {index === '1' ? <ToDo /> : null}
-            {index === '2' ? 'Coin Tracker' : null}
+            {index === '2' ? <CoinTracker /> : null}
         </div>
     );
 }
